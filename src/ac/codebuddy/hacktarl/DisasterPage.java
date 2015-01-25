@@ -32,8 +32,8 @@ ActionBar.TabListener {
 		actionBar.setHomeButtonEnabled(true);
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
-		actionBar.addTab(actionBar.newTab().setText("Emergency Hotlines").setTabListener(this));
-		actionBar.addTab(actionBar.newTab().setText("").setTabListener(this));
+		actionBar.addTab(actionBar.newTab().setText("BFP Emergency Hotlines").setTabListener(this));
+		actionBar.addTab(actionBar.newTab().setText("PNP Emergency Hotlines").setTabListener(this));
 		
 		viewpager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 			

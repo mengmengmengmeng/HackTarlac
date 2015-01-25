@@ -16,6 +16,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -168,6 +169,20 @@ public class BFPHotlines extends Fragment{
 				spinner.setVisibility(View.GONE);
 				list = new loadBFP();
 				bfpView.setAdapter(list);
+				bfpView.setOnItemClickListener(new OnItemClickListener() {
+					@Override 
+				    public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3)
+				    {
+						if(listBFP.get(position).getContactNumber().toString().equals("")){
+							
+						}else{
+							Intent intent = new Intent(Intent.ACTION_CALL);
+							intent.setData(Uri.parse("tel:" + listBFP.get(position).getContactNumber().toString()));
+							getActivity().startActivity(intent);
+						}
+						
+				    }
+				});
 				
 				list.notifyDataSetChanged();
 			}

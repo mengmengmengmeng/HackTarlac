@@ -142,7 +142,7 @@ public class HealthCareCenters extends Fragment{
 						
 						data.setClinics(obj_data.getString("id"), obj_data.getString("name"),
 								obj_data.getString("rhu_code"),obj_data.getString("address"),
-								obj_data.getString("primary_contact_number"),obj_data.getString("created_at"),
+								obj_data.getString("contact_number"),obj_data.getString("created_at"),
 								obj_data.getString("updated_at"));
 										
 						listClinics.add(data);

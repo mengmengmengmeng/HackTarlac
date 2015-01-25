@@ -111,7 +111,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			// TODO Auto-generated method stub
 			super.onPreExecute();
 			progDl = new ProgressDialog(MainActivity.this);
-			progDl.setTitle("Loading templates....");
+			progDl.setTitle("Setting up....");
 			progDl.setCancelable(false);
 			progDl.show();
 			

@@ -16,6 +16,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -118,13 +119,13 @@ public class PNPHotlines extends Fragment{
 				ServiceHandler sh = new ServiceHandler();
 				String url = getString(R.string.apicall)+"pnp";
 				
-				if(isNetworkAvailable()){
-					str = sh.makeServiceCall(url, ServiceHandler.GET);
+				//if(isNetworkAvailable()){
+					//str = sh.makeServiceCall(url, ServiceHandler.GET);
 					
-					Editor editor = preferences.edit();
-					editor.putString("PNPData", str.toString());
-					editor.commit();
-				}
+					//Editor editor = preferences.edit();
+					//editor.putString("PNPData", str.toString());
+					//editor.commit();
+			//	}
 
 				try {
 					JSONArray newJson = new JSONArray(preferences.getString("PNPData", "[]"));
@@ -164,6 +165,20 @@ public class PNPHotlines extends Fragment{
 				list = new loadPNP();
 				spinner.setVisibility(View.GONE);
 				pnpView.setAdapter(list);
+				pnpView.setOnItemClickListener(new OnItemClickListener() {
+					@Override 
+				    public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3)
+				    {
+						if(listPNP.get(position).getContactNumber().toString().equals("")){
+							
+						}else{
+							Intent intent = new Intent(Intent.ACTION_CALL);
+							intent.setData(Uri.parse("tel:" + listPNP.get(position).getContactNumber().toString()));
+							getActivity().startActivity(intent);
+						}
+						
+				    }
+				});
 				
 				list.notifyDataSetChanged();
 			}
