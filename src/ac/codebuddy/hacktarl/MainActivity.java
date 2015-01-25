@@ -30,6 +30,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class MainActivity extends Activity implements OnClickListener {
@@ -57,12 +58,12 @@ public class MainActivity extends Activity implements OnClickListener {
 		employment.setOnClickListener(this);
 		tourism.setOnClickListener(this);
 		
-		preferences = getSharedPreferences("Tokens", Context.MODE_PRIVATE);
+		//preferences = getSharedPreferences("Tokens", Context.MODE_PRIVATE);
 		
-		String check = preferences.getString("CheckIfFIrstLogin", "");
-		if(check.equals("")){
+		//String check = preferences.getString("CheckIfFIrstLogin", "");
+		//if(check.equals("")){
 			new getClinics().execute();
-		}
+	//	}
 		
 	}
 
@@ -77,28 +78,30 @@ public class MainActivity extends Activity implements OnClickListener {
 	            break;
 	        }
 	        case R.id.tourism:{
-	        	Intent intent = new Intent(this, TourismPage.class);
+	        	/*Intent intent = new Intent(this, TourismPage.class);
 				startActivity(intent);
 	            break;
+	            */
+	            Toast.makeText(this, "You didn't see anything...", Toast.LENGTH_LONG).show();
 	        }
 	        case R.id.disaster:{
 	        	Intent intent = new Intent(this, DisasterPage.class);
 				startActivity(intent);
 	            break;
+	            
 	        }
-	        /*
 	        case R.id.education:{
-	        	Intent intent = new Intent(this, SolaneAuthenticityCheckerActivity.class);
+	        	/*Intent intent = new Intent(this, DisasterPage.class);
 				startActivity(intent);
-	        	break;
+	            break;
+	            */
+	        	Toast.makeText(this, ":(", Toast.LENGTH_LONG).show();
 	        }
 	        
 	        case R.id.employment:{
-	        	Intent intent = new Intent(this, SolaneKitchenEMinderOneActivity.class);
-				startActivity(intent);
-	        	break;
+	        	Toast.makeText(this, "Come on, tap me goooood...", Toast.LENGTH_LONG).show();
+	        	
 	        }
-	        */
         }
 		
 	}
