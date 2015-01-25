@@ -60,10 +60,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		preferences = getSharedPreferences("Tokens", Context.MODE_PRIVATE);
 		
-		//String check = preferences.getString("CheckIfFIrstLogin", "");
-		//if(check.equals("")){
+		String check = preferences.getString("CheckIfFIrstLogin", "");
+		if(check.equals("")){
 			new getClinics().execute();
-	//	}
+		}
 		
 	}
 
@@ -83,6 +83,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	            break;
 	            */
 	            Toast.makeText(this, "You didn't see anything...", Toast.LENGTH_LONG).show();
+	            break;
 	        }
 	        case R.id.disaster:{
 	        	Intent intent = new Intent(this, DisasterPage.class);
@@ -96,10 +97,12 @@ public class MainActivity extends Activity implements OnClickListener {
 	            break;
 	            */
 	        	Toast.makeText(this, ":(", Toast.LENGTH_LONG).show();
+	        	break;
 	        }
 	        
 	        case R.id.employment:{
 	        	Toast.makeText(this, "Come on, tap me goooood...", Toast.LENGTH_LONG).show();
+	        	break;
 	        	
 	        }
         }
