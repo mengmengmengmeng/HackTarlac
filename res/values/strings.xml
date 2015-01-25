@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Tarlac App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_health_care_page">Health Care</string>
+    <string name="apicall">http://192.168.4.151:3000/api/v1/</string>
+    <string name="lipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!-- Date Util -->
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+    <string name="date_util_suffix">ago</string>
+    <!-- end of Date utils -->
+
+    <string name="title_activity_tourism_page">Tourism Page</string>
+    <string name="title_activity_education_page">Education Page</string>
+    <string name="title_activity_education_scholarships">Education Scholarships</string>
+    <string name="title_activity_education_may_pasok_ba">EducationMayPasokBa</string>
+    <string name="title_activity_tourism_details">Tourism Details</string>
+    <string name="title_activity_disaster_page">Disaster</string>
+    <string name="title_activity_tarlac_emergency_hotlines">Tarlac Emergency Hotlines</string>
+    <string name="title_activity_pnphotlines">PNP Hotlines</string>
+
+</resources>
