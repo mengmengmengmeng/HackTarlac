@@ -58,7 +58,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		employment.setOnClickListener(this);
 		tourism.setOnClickListener(this);
 		
-		//preferences = getSharedPreferences("Tokens", Context.MODE_PRIVATE);
+		preferences = getSharedPreferences("Tokens", Context.MODE_PRIVATE);
 		
 		//String check = preferences.getString("CheckIfFIrstLogin", "");
 		//if(check.equals("")){

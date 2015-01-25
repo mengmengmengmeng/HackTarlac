@@ -1498,7 +1498,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f0b0002;
         public static final int action_menu_presenter=0x7f0b0003;
         public static final int action_mode_close_button=0x7f0b0036;
-        public static final int action_settings=0x7f0b0069;
+        public static final int action_settings=0x7f0b0068;
         public static final int activity_chooser_view_content=0x7f0b0037;
         public static final int address=0x7f0b005d;
         public static final int always=0x7f0b0022;
@@ -1506,7 +1506,6 @@ containing a value of this type.
         public static final int beginning=0x7f0b0029;
         public static final int bfpLists=0x7f0b0054;
         public static final int book_now=0x7f0b0014;
-        public static final int button1=0x7f0b0066;
         public static final int buyButton=0x7f0b0010;
         public static final int buy_now=0x7f0b0015;
         public static final int buy_with_google=0x7f0b0016;
@@ -1551,7 +1550,7 @@ containing a value of this type.
         public static final int none=0x7f0b0007;
         public static final int normal=0x7f0b0008;
         public static final int pager=0x7f0b0064;
-        public static final int pnpLists=0x7f0b0067;
+        public static final int pnpLists=0x7f0b0066;
         public static final int production=0x7f0b000d;
         public static final int progress_circular=0x7f0b0004;
         public static final int progress_horizontal=0x7f0b0005;
@@ -1585,7 +1584,7 @@ containing a value of this type.
         public static final int title=0x7f0b003d;
         public static final int top_action_bar=0x7f0b0032;
         public static final int tourism=0x7f0b0051;
-        public static final int tourismLists=0x7f0b0068;
+        public static final int tourismLists=0x7f0b0067;
         public static final int up=0x7f0b0033;
         public static final int updated_at=0x7f0b0061;
         public static final int useLogo=0x7f0b0021;
